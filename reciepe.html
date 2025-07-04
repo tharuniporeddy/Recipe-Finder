@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <h1 class="recipe-title">
+            <i class="fas fa-utensils"></i> Recipe Finder
+        </h1>
+        <div class="recipe-search-box">
+            <input type="text" id="searchInput" placeholder="Search by ingredient or recipe name (e.g., chicken, pasta carbonara)">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div id="initialContent" class="page-section active">
+            <div class="initial-message">
+                <img src="https://cdn.pixabay.com/photo/2024/01/13/18/38/chef-8506385_1280.jpg" alt="Chef Icon" class="chef-icon">
+                <p>Ready to cook something amazing?</p>
+                <p>Search for recipes by entering an ingredient you have or the name of a dish you'd like to make.</p>
+                <div class="suggested-searches">
+                    <button class="recipe-suggestion-btn" data-query="chicken">Chicken</button>
+                    <button class="recipe-suggestion-btn" data-query="pasta">Pasta</button>
+                    <button class="recipe-suggestion-btn" data-query="chocolate">Chocolate</button>
+                    <button class="recipe-suggestion-btn" data-query="beef">Beef</button>
+                    <button class="recipe-suggestion-btn" data-query="salad">Salad</button>
+                    <button class="recipe-suggestion-btn" data-query="soup">Soup</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="searchResultsSection" class="page-section">
+            <div class="results-header-container">
+                <p id="recipeResultsCount"></p>
+                <button id="clearSearchButton" class="clear-button hidden">Clear Search</button>
+            </div>
+            <div id="searchResultsGrid" class="search-results-grid"></div>
+        </div>
+
+        <div id="recipeDetailsSection" class="page-section">
+            <button id="backToResultsButton" class="back-button"><i class="fas fa-arrow-left"></i> Back to results</button>
+            <div id="detailContent"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
