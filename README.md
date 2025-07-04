@@ -41,6 +41,6 @@ A responsive and user-friendly Recipe Finder App that allows users to search for
 
 ## 🚀 Live Demo
 
-🔗 **View Live App:**(https://yourusername.github.io/recipe-finder-app)
+🔗 **View Live App:**(https://tharuniporeddy.github.io/Recipe-Finder/)
 
 
